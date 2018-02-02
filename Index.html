@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="contaier">
+
+      <div class="navbar-header">
+        <button class="toggle"><span></span>
+          <span></span></button>
+          <a href="" class="navbar-brand"><img src="damian.jpg" alt=""></a>
+        </div><!-- navbar-header -->
+
+        <ul class="nav navcollaps">
+          <li><a href="#first">Home</a></li>
+          <li><a href="#education">About</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+      </div><!-- contaier -->
+    </div><!-- navbar -->
+    <h1><center>About</center></h1>
+    <div id="first">
+      <p><center style="color:red;">Web developer seeking junior position. Lover of technology and coding.</center></p>
+
+    </div>
+
+    <h1><center>Education</center></h1>
+    <div class="container">
+      <div id="education">
+        <H2>Blackheath High School</H2>
+
+        <H3>Subjects</H3>
+        <ol>
+          <li>AFRIKAANS</li>
+          <li>ENGLISH</li>
+          <li>MATHS LITERACY</li>
+          <li>LIFE ORIENTATION</li>
+          <li>ACCOUNTING</li>
+          <li>BUSINESS STUDIES</li>
+          <li>COMPUTER APPLICATION
+            TEGNOLOGY</li>
+          </ol>
+        </div>
+        <div id="futher_studies">
+          <h2>Life Choices Academy</h2>
+          Recently completed a 6-month course with Lifechoices, learning the Most Important Job Skill of the Future, CODING! During the time at Lifechoices, I learned modern web languages(HTML, CSS, jQuery, JavaScript, Sass etc), design thinking and undergo professional development (i.e to work cohesively in a team and get practice with the tools used in the professional industry.) that has prepared me for the working world. I have gained confidence in being able to assess problems and design solutions to the problems.
+        </div>
+      </div>
+
+
+      <div class="skills">
+        <div id="Skills">
+          <h1><center><span>Skills</span></center></h1>
+
+          <p>HTML: Hypertext Markup Language</p>
+          <p>CSS: Cascading Style Sheets </p>
+          <p>SASS</p>
+          <p>JavaScript</p>
+          <p>JQuery</p>
+        </div>
+
+        <br>
+
+        <div class="container">
+          <center>
+            <div class="coding_languages">
+              <center>
+                <h1>Coding languages</h1>
+                <img src="HTML.png" alt=""width="300%"height="200px">
+                <img src="css-icon.png" alt=""width="100px"height="100px">
+                <img src="sass-logo-new.png" alt=""width="100px"height="100px">
+                <img src="JS.jpg" alt=""width="100px"height="100px">
+                <img src="Jquery.png" alt=""width="100px"height="100px">
+              </center>
+            </div>
+          </center>
+        </div>
+      </div>
+
+      <div class="Contacts">
+      <h1><center><span>Contact</span></center></h1>
+    <p>Email:damianebeukes25@gmail.com</p>
+    <p>Phone Number: 0714007430 / 0748585995</p>
+    </div>
+
+      <a class="back-top back-top--visible" href="#top" title="Back to top">
+        <b class="arrow arrow-up"></b>
+      </a>
+
+      <script type="text/javascript">
+      jQuery(document).ready(function($) {
+
+        // fade in #back-top
+        $(function() {
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+              $('.back-top').fadeIn('slow');
+            } else {
+              $('.back-top').fadeOut('slow');
+            }
+          });
+
+          // scroll body to 0px on click
+          $('.back-top').click(function() {
+            $('body,html').animate({
+              scrollTop: 0
+            }, 2000);
+            return false;
+          });
+        });
+      }); // ready()
+      </script>
+    </body>
+    </html>
